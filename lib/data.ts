@@ -10,6 +10,8 @@ export type Stat = {
   year: string;
 };
 
+export const LAST_UPDATED = "July 2026";
+
 export const SITE = {
   name: "MN Somalis",
   domain: "mnsomalis.com",
@@ -212,9 +214,8 @@ export const economyStats: Stat[] = [
 export const trendTable = {
   title: "Two decades of upward mobility",
   note: "Somali foreign-born population in Minnesota, 2000 vs. 2014–2018",
-  source: "Minnesota Compass via Minnesota Chamber Foundation",
-  sourceUrl:
-    "https://www.mnchamber.com/sites/default/files/The%20Economic%20Contributions%20of%20Immigrants%20in%20Minnesota%203.23.21.pdf",
+  source: "Minnesota Compass via Minnesota Chamber Foundation (Table 12)",
+  sourceUrl: "https://www.mnchamber.com/blog/contributions-change-over-time",
   rows: [
     {
       indicator: "Poverty rate",
@@ -356,6 +357,10 @@ export const sources = [
   {
     name: "Minnesota Chamber Foundation — The Economic Contributions of Immigrants in Minnesota (2021)",
     url: "https://www.mnchamber.com/sites/default/files/The%20Economic%20Contributions%20of%20Immigrants%20in%20Minnesota%203.23.21.pdf",
+  },
+  {
+    name: "Minnesota Chamber of Commerce — Contributions Change Over Time (Somali trend data, web version)",
+    url: "https://www.mnchamber.com/blog/contributions-change-over-time",
   },
   {
     name: "Dr. Bruce Corrie (Concordia University) — Latest Data on Somali Minnesotans 2024",

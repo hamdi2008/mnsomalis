@@ -3,6 +3,7 @@ import { Inter, Instrument_Serif, IBM_Plex_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import Reveal from "@/components/Reveal";
+import { LAST_UPDATED } from "@/lib/data";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const serif = Instrument_Serif({
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/economy">Economy</Link>
               <Link href="/history">History</Link>
               <Link href="/methodology">Methodology</Link>
+              <Link href="/about">About</Link>
             </div>
           </div>
         </nav>
@@ -74,11 +76,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/economy">Economy &amp; Work</Link>
               <Link href="/history">History &amp; Timeline</Link>
               <Link href="/methodology">Methodology &amp; Sources</Link>
+              <Link href="/about">About</Link>
             </div>
           </div>
           <div className="wrap f-mono">
             Data: U.S. Census Bureau · MN State Demographic Center · MN Compass ·
-            MN Chamber Foundation · Minnesota Historical Society
+            MN Chamber Foundation · Minnesota Historical Society · Last updated: {LAST_UPDATED}
           </div>
         </footer>
         <Reveal />

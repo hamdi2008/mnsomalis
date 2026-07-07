@@ -46,6 +46,41 @@ export default function MethodologyPage() {
             (1-year) and December (5-year).
           </p>
 
+          <h2 style={{ marginTop: "2.5rem" }}>Why numbers differ</h2>
+          <p>
+            The American Community Survey is a sample survey, not a full
+            count, so every ACS figure is an estimate with a margin of error.
+            Different ACS products also measure different things: 1-year
+            estimates are more current but less precise; 5-year estimates are
+            more precise but lag behind. Identity questions add another layer
+            — counts based on ancestry, race, or place of birth each capture a
+            different slice of the community, and many respondents skip the
+            ancestry question entirely. This is why credible population
+            estimates for Somali Minnesotans legitimately range from about
+            61,000 to 108,500, and why this site always tells you which
+            measure a number comes from.
+          </p>
+
+          <h2 style={{ marginTop: "2.5rem" }}>How sources are selected</h2>
+          <p>
+            We favor primary and institutional sources in this order:
+            official government data (Census Bureau, state agencies),
+            established research organizations (Minnesota Compass, Minnesota
+            Chamber Foundation), the Minnesota Historical Society, and
+            peer-cited academic research. News outlets are cited only when
+            they report or analyze underlying official data. Advocacy sources
+            — on any side — are not used.
+          </p>
+
+          <h2 style={{ marginTop: "2.5rem" }}>How this site was built</h2>
+          <p>
+            AI tools assisted with gathering, organizing, and drafting the
+            content on this site. Every statistic comes from a publicly
+            available source, is linked to that source, and every effort has
+            been made to represent those sources accurately. See the{" "}
+            <a href="/about">About</a> page for more on the project.
+          </p>
+
           <h2 style={{ marginTop: "2.5rem" }}>Corrections</h2>
           <p>
             Found an error, a stale figure, or a better primary source? Email{" "}
