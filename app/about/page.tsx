@@ -59,12 +59,32 @@ export default function AboutPage() {
             <Link href="/methodology">Methodology &amp; Sources</Link> page.
           </p>
 
-          <h2 style={{ marginTop: "2.5rem" }}>Corrections</h2>
+          <h2 style={{ marginTop: "2.5rem" }}>About the maintainer</h2>
+          <p>MN Somalis is created and maintained by Hamdi Hassan.</p>
           <p>
-            Accuracy is the entire point of this site. If you notice an error,
-            outdated information, or missing context, please email{" "}
+            I built this project to make reliable, publicly available
+            information about Minnesota&apos;s Somali community easier to
+            find and understand. The information already existed across
+            government reports, academic research, and public datasets—it
+            simply wasn&apos;t available in one accessible place.
+          </p>
+          <p>
+            My role is to organize that information, cite every source, and
+            maintain the project over time. I welcome corrections and
+            feedback to help keep the site accurate and useful.
+          </p>
+
+          <h2 style={{ marginTop: "2.5rem" }}>Corrections &amp; Feedback</h2>
+          <p>
+            Accuracy is the foundation of this project. If you notice an
+            error, outdated information, missing context, or would like to
+            suggest a reliable public source or topic, please email{" "}
             <a href="mailto:hello@mnsomalis.com">hello@mnsomalis.com</a>.
-            Verified corrections are made promptly and noted.
+          </p>
+          <p>
+            Every message is reviewed carefully. Verified corrections are
+            made promptly, and thoughtful suggestions help improve the
+            project over time.
           </p>
 
           <p className="m-note" style={{ marginTop: "2.5rem" }}>

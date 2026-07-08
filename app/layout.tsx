@@ -3,7 +3,6 @@ import { Inter, Instrument_Serif, IBM_Plex_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import Reveal from "@/components/Reveal";
-import { LAST_UPDATED } from "@/lib/data";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const serif = Instrument_Serif({
@@ -67,8 +66,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 MN<span className="dot">·</span>Somalis
               </div>
               <p>
-                An independent reference on Minnesota&apos;s Somali community,
-                built entirely from public data. Sources cited on every page.
+                An independent public reference about Minnesota&apos;s Somali
+                community. Every statistic links to its original source.
               </p>
             </div>
             <div className="f-links">
@@ -77,11 +76,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/history">History &amp; Timeline</Link>
               <Link href="/methodology">Methodology &amp; Sources</Link>
               <Link href="/about">About</Link>
+              <a href="mailto:hello@mnsomalis.com">Contact</a>
             </div>
           </div>
           <div className="wrap f-mono">
             Data: U.S. Census Bureau · MN State Demographic Center · MN Compass ·
-            MN Chamber Foundation · Minnesota Historical Society · Last updated: {LAST_UPDATED}
+            MN Chamber Foundation · Minnesota Historical Society
           </div>
         </footer>
         <Reveal />
