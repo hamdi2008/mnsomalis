@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif, IBM_Plex_Mono } from "next/font/google";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 import Reveal from "@/components/Reveal";
 import MobileNav from "@/components/MobileNav";
+
+const GA_MEASUREMENT_ID = "G-KG45ZC3WZP";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const serif = Instrument_Serif({
@@ -87,6 +90,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         <Reveal />
+        {process.env.NODE_ENV === "production" && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
