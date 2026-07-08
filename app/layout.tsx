@@ -3,6 +3,7 @@ import { Inter, Instrument_Serif, IBM_Plex_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import Reveal from "@/components/Reveal";
+import MobileNav from "@/components/MobileNav";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const serif = Instrument_Serif({
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/methodology">Methodology</Link>
               <Link href="/about">About</Link>
             </div>
+            <MobileNav />
           </div>
         </nav>
         <main>{children}</main>
