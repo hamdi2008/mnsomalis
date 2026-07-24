@@ -88,6 +88,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Data: U.S. Census Bureau · MN State Demographic Center · MN Compass ·
             MN Chamber Foundation · Minnesota Historical Society
           </div>
+          <div className="wrap f-mono f-credit">
+            A product by{" "}
+            <a href="https://www.byhamdi.co/" target="_blank" rel="noopener noreferrer">
+              By Hamdi
+            </a>
+          </div>
         </footer>
         <Reveal />
         {process.env.NODE_ENV === "production" && (

@@ -273,6 +273,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
 .footer p { font-size: 0.85rem; color: var(--ink-soft); max-width: 44ch; margin-top: 0.5rem; }
 .footer .f-links { display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.88rem; }
 .footer .f-mono { font-family: var(--mono); font-size: 0.7rem; color: var(--ink-soft); margin-top: 2rem; }
+.footer .f-mono.f-credit { margin-top: 0.6rem; }
+.footer .f-mono a { color: var(--ink-soft); text-decoration: underline; text-decoration-color: var(--line); }
+.footer .f-mono a:hover { color: var(--blue-deep); text-decoration-color: var(--blue); }
 
 /* ---------- Reveal ---------- */
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
