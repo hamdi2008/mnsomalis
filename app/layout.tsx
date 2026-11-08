@@ -81,6 +81,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/history">History &amp; Timeline</Link>
               <Link href="/methodology">Methodology &amp; Sources</Link>
               <Link href="/about">About</Link>
+              <a
+                href="https://www.instagram.com/mnsomalievents/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Somali Community Events
+              </a>
               <a href="mailto:hello@mnsomalis.com">Contact</a>
             </div>
           </div>
@@ -90,7 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <div className="wrap f-mono f-credit">
             A product by{" "}
-            <a href="https://www.byhamdi.co/" target="_blank" rel="noopener noreferrer">
+            <a href="https://byhamdi.com" target="_blank" rel="noopener noreferrer">
               By Hamdi
             </a>
           </div>
